@@ -17,10 +17,14 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-/*$router->get('/key', function() {
-    return \Illuminate\Support\Str::random(32);
-});*/
-
-$router->get('/key', 'KeyController@generateKey');
-$router->post('/key', 'KeyController@testPost');
-$router->put('key/{ id }', 'KeyController@testUpdate');
+// API route group
+$router->group(['prefix' => 'api'], function () use ($router) {
+    // Ruta: /api/key
+    $router->get('key', 'KeyController@generateKey');
+    // Ruta: /api/test
+    $router->get('test', 'TestController@testGet');
+    // Ruta: /api/test
+    $router->post('test', 'TestController@testPost');
+    // Ruta: /api/test/{ id }
+    $router->put('test/{ id }', 'TestController@testUpdate'); 
+});

@@ -21,21 +21,4 @@ class KeyController extends Controller
             'key' => \Illuminate\Support\Str::random(32)
         ]);
     }
-
-    public function testUpdate(Request $request, $id) 
-    {
-        return response()->json([
-            'id' => $id,
-            'name' => $request->input('nombre'), 
-            'apellido' => $request->input('apellido')
-        ]);
-    }
-
-    public function testPost(Request $request)
-    {
-        return response()->json([
-            'name' => $request->input('nombre'), 
-            'apellido' => $request->input('apellido')
-        ]);      
-    }
 }
