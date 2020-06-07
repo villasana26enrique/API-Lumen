@@ -14,16 +14,16 @@ La documentación del Framework la puedes encontrar en [Lumen website](https://l
 ## Paso a Paso para Instalar.
 Este es un proyecto basico desarrollado con algunos ejemplos sencillos para entender el funcionamiento del Framework. Además de poder utilizarse como base si deseas empezar un API REST con Autenticación JWT (Json Web Token) para empezar a utilizarlo debes hacer lo siguiente:
 
-1. Tener instalado el manejador de paquetes Composer. Lo Puedes conseguir aqui [Composer Website](https://getcomposer.org)
+1. Instalar el manejador de paquetes Composer. Lo Puedes conseguir aqui [Composer Website](https://getcomposer.org)
 
-Y luego asegurarte de cumplir los siguientes requisitos del sistema:
+Debes asegurarte de cumplir los siguientes requisitos del sistema:
 
 * PHP >= 7.2
 * OpenSSL PHP Extension
 * PDO PHP Extension
 * Mbstring PHP Extension
 
-2. Descargar este proyecto, puedes hacerlo directamente desde aqui o utilizando git a través de la siguiente instrucción:
+2. Descarga este proyecto. Puedes hacerlo directamente desde aqui o utilizando git a través de la siguiente instrucción:
 
     git clone https://github.com/villasana26enrique/API-Lumen.git
 
