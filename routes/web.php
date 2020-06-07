@@ -19,6 +19,24 @@ $router->get('/', function () use ($router) {
 
 // API route group
 $router->group(['prefix' => 'api'], function () use ($router) {
+    $router->group(['prefix' => 'auth'], function () use ($router) {
+        // Ruta: /api/auth/register
+        $router->post('register', 'AuthController@register');
+        // Ruta: /api/auth/login
+        $router->post('login', 'AuthController@login');
+    });
+
+    $router->group(['prefix' => 'user'], function () use ($router) {
+        // Ruta: /api/user/
+        $router->get('all', 'UserController@allUsers');
+        // Ruta: /api/user/1 
+        // Obtiene usuario por ID
+        $router->get('get/{id}', 'UserController@singleUser');
+        //Ruta: /api/user/profile
+        $router->get('profile', 'UserController@profile');
+    });
+
+
     // Ruta: /api/key
     $router->get('key', 'KeyController@generateKey');
     // Ruta: /api/test
