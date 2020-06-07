@@ -33,7 +33,7 @@ Debes asegurarte de cumplir los siguientes requisitos del sistema:
 
     composer install
     
-Este comando se encargará de instalar los paquetes necesarios para que funcione la aplicación.
+ - Este comando se encargará de instalar los paquetes necesarios para que funcione la aplicación.
 
 5. Ejecutar el siguiente comando para iniciar el Servidor:
 
@@ -43,7 +43,7 @@ Este comando se encargará de instalar los paquetes necesarios para que funcione
 
     http://localhost:8000/api/key
     
-El valor del "Key" que se muestra al acceder a esta ruta, debes seleccionarlo y pegarlo en tu archivo .env, especificamente asignarlo al valor: APP_KEY
+ - El valor del "Key" que se muestra al acceder a esta ruta, debes seleccionarlo y pegarlo en tu archivo .env, especificamente asignarlo al valor: APP_KEY
 
 ### Como está descrito al empezar la sección "Paso a Paso" esta API cuenta con seguridad JWT (Json Web Token) y debe hacer lo siguiente para que funcione correctamente: 
 
@@ -57,6 +57,6 @@ El valor del "Key" que se muestra al acceder a esta ruta, debes seleccionarlo y 
 
     php artisan migrate
     
-Este comando se encrgará de crear la tabla "Users" la cual es necesaria para el funcionamiento del JWT.
+- Este comando se encarga de crear la tabla "Users" la cual es necesaria para el funcionamiento del JWT.
 
-4. Y Listo! el proyecto está listo para funcionar. A través de las rutas "api/register" y "api/login" utilizando alguna herramienta como [Postman](https://www.postman.com) o alguna de su preferencia, puede obtener el Token necesario para acceder a las rutas protegidas.
+4. Y Listo! el proyecto está listo para funcionar. A través de las rutas "api/auth/register" y "api/auth/login" utilizando alguna herramienta como [Postman](https://www.postman.com) o alguna de su preferencia, puede obtener el Token necesario para acceder a las rutas protegidas.
