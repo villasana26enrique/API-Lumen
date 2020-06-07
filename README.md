@@ -25,23 +25,23 @@ Debes asegurarte de cumplir los siguientes requisitos del sistema:
 
 2. Descarga este proyecto. Puedes hacerlo directamente desde aqui o utilizando git a través de la siguiente instrucción:
 
-    git clone https://github.com/villasana26enrique/API-Lumen.git
+    **git clone https://github.com/villasana26enrique/API-Lumen.git**
 
-3. Luego de tener el codigo del proyecto, tomar el archivo que se encuentra ubicado en la raíz llamado .env.example y renombrarlo a .env (Debes saber que el archivo .env tiene las configuraciones de tu sistema en particular y debes configurarlo como tal)
+3. Luego de tener el codigo del proyecto, tomar el archivo que se encuentra ubicado en la raíz llamado **.env.example** y renombrarlo a **.env** (Debes saber que el archivo .env tiene las configuraciones de tu sistema en particular y debes configurarlo como tal)
 
 4. Ejecutar el comando: 
 
-    composer install
+    **composer install**
     
  - Este comando se encargará de instalar los paquetes necesarios para que funcione la aplicación.
 
 5. Ejecutar el siguiente comando para iniciar el Servidor:
 
-    php artisan start:serve
+    **php artisan start:serve**
 
 6. Luego de activar el servidor local debes acceder a través del navegador a la ruta:
 
-    http://localhost:8000/api/key
+    **http://localhost:8000/api/key**
     
  - El valor del "Key" que se muestra al acceder a esta ruta, debes seleccionarlo y pegarlo en tu archivo .env, especificamente asignarlo al valor: APP_KEY
 
@@ -49,13 +49,13 @@ Debes asegurarte de cumplir los siguientes requisitos del sistema:
 
 1. Luego de haber hecho todos los pasos anteriores, lo primero que debe hacer es ejecutar el comando:
 
-    php artisan jwt:secret
+    **php artisan jwt:secret**
 
-2. Crear una Base de Datos y realizar las configuraciones necesarias en el archvivo .env para que el API se conecte a su BD.
+2. Crear una Base de Datos y realizar las configuraciones necesarias en el archvivo **.env** para que el API se conecte a su BD. El Archivo .env.example de este proyecto, está configurado con una conexión a una BD llamada lumen, atención con esto ya que es solo de ejemplo. 
 
 3. Ejecutar el comando:
 
-    php artisan migrate
+    **php artisan migrate**
     
 - Este comando se encarga de crear la tabla "Users" la cual es necesaria para el funcionamiento del JWT.
 
